@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>844</width>
+    <height>638</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout"/>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>844</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="actionNew_Project"/>
+    <addaction name="actionOpen"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionSave_as"/>
+    <addaction name="actionclose"/>
+    <addaction name="separator"/>
+    <addaction name="actionModelProcess"/>
+    <addaction name="actionOpenModel"/>
+    <addaction name="separator"/>
+    <addaction name="actionChangeDefalutPath"/>
+    <addaction name="separator"/>
+    <addaction name="actionClose"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>视图</string>
+    </property>
+    <widget class="QMenu" name="menuView_2">
+     <property name="title">
+      <string>视图</string>
+     </property>
+     <addaction name="actionXY"/>
+     <addaction name="actionXZ"/>
+     <addaction name="actionYZ"/>
+     <addaction name="actionYX"/>
+     <addaction name="actionZX"/>
+     <addaction name="actionZY"/>
+     <addaction name="actionOthers"/>
+    </widget>
+    <widget class="QMenu" name="menuView_Element">
+     <property name="title">
+      <string>视图元素</string>
+     </property>
+     <addaction name="actionModel"/>
+     <addaction name="actionViewProcessEffects"/>
+     <addaction name="actionWorldCoords"/>
+     <addaction name="actionWorldCoordsDir"/>
+     <addaction name="actionXYGrid"/>
+     <addaction name="actionYZGrid"/>
+     <addaction name="actionXZGrid"/>
+     <addaction name="separator"/>
+     <addaction name="actionModelBack"/>
+     <addaction name="actionModelWire"/>
+    </widget>
+    <addaction name="actionTools"/>
+    <addaction name="actionStatusBar"/>
+    <addaction name="separator"/>
+    <addaction name="actionViewSize"/>
+    <addaction name="menuView_2"/>
+    <addaction name="menuView_Element"/>
+   </widget>
+   <widget class="QMenu" name="menuTool">
+    <property name="title">
+     <string>工具</string>
+    </property>
+    <addaction name="actionEnterPathPlay"/>
+    <addaction name="actionExitPathShow"/>
+    <addaction name="separator"/>
+    <addaction name="actionEnterSimu"/>
+    <addaction name="actionExitSimu"/>
+    <addaction name="actionSimuSettion"/>
+    <addaction name="separator"/>
+    <addaction name="actionPathOptimize"/>
+    <addaction name="actionDelSimuModel"/>
+    <addaction name="separator"/>
+    <addaction name="actionSection"/>
+   </widget>
+   <widget class="QMenu" name="menuCourse">
+    <property name="title">
+     <string>教程</string>
+    </property>
+    <addaction name="actionMan"/>
+    <addaction name="actionVideo"/>
+   </widget>
+   <widget class="QMenu" name="menuMan">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuView"/>
+   <addaction name="menuTool"/>
+   <addaction name="menuCourse"/>
+   <addaction name="menuMan"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionNew_Project">
+   <property name="text">
+    <string>新建...</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>保存</string>
+   </property>
+  </action>
+  <action name="actionSave_as">
+   <property name="text">
+    <string>另存...</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="text">
+    <string>打开</string>
+   </property>
+  </action>
+  <action name="actionclose">
+   <property name="text">
+    <string>关闭工程</string>
+   </property>
+  </action>
+  <action name="actionModelProcess">
+   <property name="text">
+    <string>模型细分</string>
+   </property>
+  </action>
+  <action name="actionOpenModel">
+   <property name="text">
+    <string>打开模型</string>
+   </property>
+  </action>
+  <action name="actionChangeDefalutPath">
+   <property name="text">
+    <string>默认路径设置</string>
+   </property>
+  </action>
+  <action name="actionClose">
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="actionTools">
+   <property name="text">
+    <string>工具栏</string>
+   </property>
+  </action>
+  <action name="actionStatusBar">
+   <property name="text">
+    <string>状态栏</string>
+   </property>
+  </action>
+  <action name="actionViewSize">
+   <property name="text">
+    <string>重置</string>
+   </property>
+  </action>
+  <action name="actionXY">
+   <property name="text">
+    <string>XY</string>
+   </property>
+  </action>
+  <action name="actionXZ">
+   <property name="text">
+    <string>XZ</string>
+   </property>
+  </action>
+  <action name="actionYZ">
+   <property name="text">
+    <string>YZ</string>
+   </property>
+  </action>
+  <action name="actionYX">
+   <property name="text">
+    <string>YX</string>
+   </property>
+  </action>
+  <action name="actionZX">
+   <property name="text">
+    <string>ZX</string>
+   </property>
+  </action>
+  <action name="actionZY">
+   <property name="text">
+    <string>ZY</string>
+   </property>
+  </action>
+  <action name="actionOthers">
+   <property name="text">
+    <string>其他</string>
+   </property>
+  </action>
+  <action name="actionModel">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>模型</string>
+   </property>
+   <property name="toolTip">
+    <string>模型视图</string>
+   </property>
+  </action>
+  <action name="actionViewBlank">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>毛胚</string>
+   </property>
+   <property name="toolTip">
+    <string>毛胚视图</string>
+   </property>
+  </action>
+  <action name="actionViewTool">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>刀具</string>
+   </property>
+   <property name="toolTip">
+    <string>刀具视图</string>
+   </property>
+  </action>
+  <action name="actionViewToolPath">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>刀具路径</string>
+   </property>
+   <property name="toolTip">
+    <string>刀具路径视图</string>
+   </property>
+  </action>
+  <action name="actionViewProcessEffects">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>加工效果</string>
+   </property>
+   <property name="toolTip">
+    <string>加工效果视图</string>
+   </property>
+  </action>
+  <action name="actionWorldCoords">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>世界坐标轴</string>
+   </property>
+  </action>
+  <action name="actionWorldCoordsDir">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>坐标轴方向指示</string>
+   </property>
+  </action>
+  <action name="actionXYGrid">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>XY平面基准网格</string>
+   </property>
+   <property name="toolTip">
+    <string>XY平面基准网格</string>
+   </property>
+  </action>
+  <action name="actionYZGrid">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>YZ平面基准网格</string>
+   </property>
+   <property name="toolTip">
+    <string>YZ平面基准网格</string>
+   </property>
+  </action>
+  <action name="actionXZGrid">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>XZ平面基准网格</string>
+   </property>
+   <property name="toolTip">
+    <string>XZ平面基准网格</string>
+   </property>
+  </action>
+  <action name="actionModelBack">
+   <property name="text">
+    <string>模型背面</string>
+   </property>
+   <property name="toolTip">
+    <string>模型背面</string>
+   </property>
+  </action>
+  <action name="actionModelWire">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>线框</string>
+   </property>
+   <property name="toolTip">
+    <string>线宽视图</string>
+   </property>
+  </action>
+  <action name="actionEnterPathPlay">
+   <property name="text">
+    <string>进入路径播放模式</string>
+   </property>
+  </action>
+  <action name="actionExitPathShow">
+   <property name="text">
+    <string>退出路径播放模式</string>
+   </property>
+  </action>
+  <action name="actionEnterSimu">
+   <property name="text">
+    <string>EnterSimu</string>
+   </property>
+  </action>
+  <action name="actionExitSimu">
+   <property name="text">
+    <string>ExitSimu</string>
+   </property>
+  </action>
+  <action name="actionSimuSettion">
+   <property name="text">
+    <string>SimuSetting</string>
+   </property>
+  </action>
+  <action name="actionPathOptimize">
+   <property name="text">
+    <string>PathOptimize</string>
+   </property>
+  </action>
+  <action name="actionDelSimuModel">
+   <property name="text">
+    <string>DelSimuModel</string>
+   </property>
+  </action>
+  <action name="actionMan">
+   <property name="text">
+    <string>Manual</string>
+   </property>
+  </action>
+  <action name="actionVideo">
+   <property name="text">
+    <string>Video</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>关于</string>
+   </property>
+  </action>
+  <action name="actionSection">
+   <property name="text">
+    <string>Section</string>
+   </property>
+  </action>
+  <action name="actionCreateCylinder">
+   <property name="text">
+    <string>创建圆台</string>
+   </property>
+   <property name="toolTip">
+    <string>创建圆台</string>
+   </property>
+  </action>
+  <action name="actionCreateBall">
+   <property name="text">
+    <string>创建球</string>
+   </property>
+  </action>
+  <action name="actionCreateCube">
+   <property name="text">
+    <string>创建立方体</string>
+   </property>
+  </action>
+  <action name="actionCBlankCube">
+   <property name="text">
+    <string>创建长方体毛胚</string>
+   </property>
+  </action>
+  <action name="actionaCBlankCylinder">
+   <property name="text">
+    <string>创建圆柱体毛坯</string>
+   </property>
+  </action>
+  <action name="actionModelAttr">
+   <property name="text">
+    <string>属性</string>
+   </property>
+   <property name="toolTip">
+    <string>模型属性</string>
+   </property>
+  </action>
+  <action name="actionBlankAttr">
+   <property name="text">
+    <string>属性</string>
+   </property>
+   <property name="toolTip">
+    <string>毛胚属性</string>
+   </property>
+  </action>
+  <action name="actionExportModel">
+   <property name="text">
+    <string>导出模型</string>
+   </property>
+   <property name="toolTip">
+    <string>模型导出到STL</string>
+   </property>
+  </action>
+  <action name="actionDeleteModel">
+   <property name="text">
+    <string>删除</string>
+   </property>
+   <property name="toolTip">
+    <string>删除模型</string>
+   </property>
+  </action>
+  <action name="actionCreateEndTool">
+   <property name="text">
+    <string>端头刀</string>
+   </property>
+   <property name="toolTip">
+    <string>添加端头刀</string>
+   </property>
+  </action>
+  <action name="actionCreateBallTool">
+   <property name="text">
+    <string>球头刀</string>
+   </property>
+   <property name="toolTip">
+    <string>创建球头刀</string>
+   </property>
+  </action>
+  <action name="actionCreatePath">
+   <property name="text">
+    <string>创建刀具路径</string>
+   </property>
+   <property name="toolTip">
+    <string>创建刀具路径</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

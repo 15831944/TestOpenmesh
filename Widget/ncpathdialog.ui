@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>NCPathDialog</class>
+ <widget class="QDialog" name="NCPathDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="1">
+    <widget class="QLineEdit" name="edOffset">
+     <property name="text">
+      <string>10</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="2">
+    <widget class="QPushButton" name="btnOK">
+     <property name="text">
+      <string>生成轨迹</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>刀具偏移</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btnOK</sender>
+   <signal>clicked()</signal>
+   <receiver>NCPathDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>334</x>
+     <y>281</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>261</x>
+     <y>162</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
